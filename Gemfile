@@ -14,8 +14,8 @@ gem 'uglifier',   '4.0.2'
 
 gem 'coffee-rails',      '4.2.2'
 gem 'jquery-rails',      '4.3.1'
+gem 'jquery-ui-rails',   '6.0.1'
 gem 'turbolinks',        '5.0.1'
-gem 'jquery-turbolinks', '2.1.0'
 gem 'jbuilder',          '2.7.0'
 
 gem 'aasm', '4.12.3'
@@ -32,8 +32,9 @@ gem 'cancancan',        '2.1.2'
 gem 'paper_trail',  '8.1.1'
 gem 'ranked-model', '0.4.0'
 
-gem 'bootstrap',          '4.0.0.beta2.1'
-gem "font-awesome-rails", '4.7.0.2'
+gem 'bootstrap-sass',      '3.3.7'
+gem 'font-awesome-sass',   '4.7.0'
+gem 'font-ionicons-rails', '2.0.1.5'
 
 gem 'friendly_id', '5.2.3'
 

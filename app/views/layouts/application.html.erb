@@ -1,14 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="<%= I18n.locale %>">
   <head>
-    <title>StandupApp</title>
-    <%= csrf_meta_tags %>
+    <%= render "layouts/meta" %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <title>Standup App</title>
+
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    
+    <%= render "layouts/html5shim" %>
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="hold-transition skin-blue sidebar-mini">
+    <div class="wrapper">
+      <%= render "layouts/main_header" %>
+      <%= render "layouts/main_sidebar" %>
+
+      <div class="content-wrapper">
+        <%= render "layouts/content_header" %>
+        <section class="content container-fluid">
+          <%= yield %>
+        </section>
+      </div>
+
+      <%= render "layouts/main_footer" %>
+      <%= render "layouts/control_sidebar" %>
+    </div>
   </body>
 </html>

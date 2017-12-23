@@ -11,5 +11,16 @@
 // about supported directives.
 //
 //= require rails-ujs
+
+//= require jquery3
+//= require jquery_ujs
 //= require turbolinks
+
+//= require bootstrap-sprockets
+
+//= require admin_lte
+
+// require jquery-ui
+// require jquery.slim
+
 //= require_tree .
